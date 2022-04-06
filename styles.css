@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Henny+Penny&display=swap");
+
+/* Your Awesome Styling */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+h1 {
+  font-family: "Henny Penny";
+  font-size: 3em;
+  margin: 0;
+  color: #ffffff;
+}
+
+.biglaugh {
+  transition: 1s;
+  /*   font-size: 1em; */
+  color: #9700ff;
+}
+
+.biglaugh:hover {
+  font-size: 80px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.keys {
+  /*   display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(4, 10em);
+  gap: 2em 2em;
+}
+
+kbd {
+  font-family: "Bungee Inline";
+  font-size: 3em;
+  color: #9700ff;
+}
+
+.laughkey {
+  border-radius: 100%;
+  width: 8em;
+  height: 8em;
+  margin: 1em 0;
+  background-color: #53e7ff;
+  transition: 1s;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+/*  Jello Animation  */
+  animation: swing 2s 1s infinite;
+}
+
+/* .laughkey:hover {
+  background-color: #f7ff00;
+  height: 4em;
+  box-shadow: 0px 0px 5px #ffffff;
+} */
+
+/* Interaction */
+.shrink {
+  transition: 1.5s;
+}
+
+.shrink:hover {
+  background-color: #f7ff00;
+  height: 4em;
+  box-shadow: 0px 0px 5px #ffffff;
+  cursor: pointer;
+}
+
+.grow {
+  transition: 1.5s;
+}
+
+.grow:hover {
+  background-color: #f7ff00;
+  /*   height: 10em; */
+  width: 4em;
+  box-shadow: 0px 0px 5px #ffffff;
+  cursor: pointer;
+}
